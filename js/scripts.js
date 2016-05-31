@@ -1,8 +1,9 @@
+
+
+
 $(document).ready(function(){
   $(".flashcard").click(function(){
-    $(".term").toggle();
-    $(".definition").toggle();
-
+    $("#"+this.id + " .term").toggle();
+    $("#"+this.id + " .definition").toggle();
   });
-
 });
